@@ -14,7 +14,7 @@ function hideSplash() {
       setTimeout(() => main.style.opacity = 1, 50);
       showNextQuote(); // show first quote
     }, 800); // keep fade duration if you want smooth fade
-  }, 4000); // splash screen visible for 4 seconds
+  }, 3000); // splash screen visible for 3 seconds
 }
 
 
