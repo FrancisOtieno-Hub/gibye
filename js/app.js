@@ -3,15 +3,20 @@ window.addEventListener('load', () => hideSplash());
 
 function hideSplash() {
   const splash = document.getElementById('splash');
-  splash.style.opacity = 0;
+  
+  // start fade out after 4 seconds
   setTimeout(() => {
-    splash.style.display = 'none';
-    const main = document.getElementById('main');
-    main.style.display = 'block';
-    setTimeout(() => main.style.opacity = 1, 50);
-    showNextQuote(); // show first quote
-  }, 800);
+    splash.style.opacity = 0;
+    setTimeout(() => {
+      splash.style.display = 'none';
+      const main = document.getElementById('main');
+      main.style.display = 'block';
+      setTimeout(() => main.style.opacity = 1, 50);
+      showNextQuote(); // show first quote
+    }, 800); // keep fade duration if you want smooth fade
+  }, 4000); // splash screen visible for 4 seconds
 }
+
 
 /* ===== Quotes Array ===== */
 const quotes = [
