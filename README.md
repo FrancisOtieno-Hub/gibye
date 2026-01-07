@@ -97,9 +97,3 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ```
 
----
-
-If you want, I can also **create a ready-to-use LICENSE file** and **update the README with build instructions for deployment**, so it’s fully production-ready for GitHub Pages or any hosting.  
-
-Do you want me to do that next?
-```
