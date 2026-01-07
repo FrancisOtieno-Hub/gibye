@@ -1,0 +1,100 @@
+/* ===== General Styles ===== */
+body {
+  font-family: 'Helvetica', sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  color: #333;
+  text-align: center;
+}
+
+/* ===== Splash Screen ===== */
+#splash {
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+#splash img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 20px;
+}
+
+#splash h1 {
+  font-size: 2rem;
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+}
+
+/* ===== Main Content ===== */
+#main {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+  max-width: 90%;
+  width: 600px;
+}
+
+#quote-box {
+  background: rgba(255,255,255,0.9);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#quote {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+#author {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f57c00;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #ef6c00;
+  transform: translateY(-2px);
+}
+
+/* Footer */
+#footer {
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  opacity: 0.8;
+}
+
+/* Mobile adjustments */
+@media(max-width: 400px) {
+  #quote { font-size: 1.2rem; }
+  button { font-size: 0.9rem; padding: 8px 16px; }
+}
