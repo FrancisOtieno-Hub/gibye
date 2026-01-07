@@ -16,12 +16,6 @@
 
 ---
 
-## Demo
-
-![Gibye Icon](./icons/icon-1024.png)
-
----
-
 ## Installation
 
 1. Clone the repository:
