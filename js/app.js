@@ -4,7 +4,7 @@ window.addEventListener('load', () => hideSplash());
 function hideSplash() {
   const splash = document.getElementById('splash');
   
-  // start fade out after 4 seconds
+  // start fade out after 2 seconds
   setTimeout(() => {
     splash.style.opacity = 0;
     setTimeout(() => {
@@ -14,7 +14,7 @@ function hideSplash() {
       setTimeout(() => main.style.opacity = 1, 50);
       showNextQuote(); // show first quote
     }, 800); // keep fade duration if you want smooth fade
-  }, 3000); // splash screen visible for 3 seconds
+  }, 2000); // splash screen visible for 2 seconds
 }
 
 
